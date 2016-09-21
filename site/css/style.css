@@ -1,17 +1,67 @@
+*{
+	box-sizing: border-box;
+}
 
+body{
+	font-family: sans-serif;
+}
 
+div{
+    margin: 10px;
+ 	border: solid black 1px;
+	float:left;
+	position:relative;
+	background-color:gray;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	position:absolute;
+	top:0;
+	right:0;
+	margin:0;
+	border: solid black 1px;
+	padding: 0 20px 0 20px;
+}
+
+p{
+	padding: 20px;
+}
+
+#savior{
+	background-color: white;
+}
+
+#music{
+	background-color: black;
+	color: white;
+}
+
+#food{
+	background-color: yellow;
+}
 /* DESKTOP BREAKPOINT */
 @media (min-width:992px){
-section{
-	float:left;
-	width: 33.33%;
+div{
+	width: 31.2%;
 }
 }
 /* TABLET BREAKPOINT */
 @media (min-width: 768px) and (max-width: 991px) {
-	
+	#full-width{
+		width: 97%;
+	}
+
+	.half-width{
+		width:47.3%;
+	}
 }
 /* MOBILE BREAKPOINT */
 @media (max-width:767px){
-	
+	.full-width{
+		width: 100%;
+	}
 }
